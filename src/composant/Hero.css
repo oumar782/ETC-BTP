@@ -1,0 +1,149 @@
+/* Styles pour la section Hero */
+.hero-section {
+    position: relative;
+    height: 95vh;
+    display: flex;
+   width: 1520px;
+
+  }
+  
+  /* Vidéo de fond */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  /* Overlay sombre */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  /* Contenu principal */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    
+    color: white;
+    max-width: 800px;
+    margin-top: 180px;
+    margin-left: 430px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: -4rem;
+
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    background-color: #1d4ed8;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-left: 15rem;
+
+  }
+  
+  .hero-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Conteneur d'images */
+  .image-container {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: -6rem;
+    
+  }
+  
+  .rotating-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .rotating-image:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+  }
+ /* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+  .hero-title {
+      margin-left: -650px;
+      text-align: center;
+      font-size: 2px;
+  }
+  .image-container{
+    margin-left: -480px;
+
+  }
+
+  .hero-subtitle {
+      font-size: 20px;;
+      margin-left: -600px;
+      text-align: center;
+
+  }
+
+  .hero-button {
+      padding: 0.5rem 1.5rem;
+      font-size: 0.9rem;
+      margin-left: -320px;
+    margin-top: 20px;
+  }
+
+  .hero-content {
+      margin-top: 100px;
+      align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+      font-size: 18px;
+      margin-top: 60px;
+      margin-right: -175px;
+
+  }
+
+  .hero-subtitle {
+      font-size: 10px;
+      text-align: center;
+      margin-right: -115px;
+      margin-top: 35px;
+
+      
+  }
+  .hero-button {
+  
+  margin-top: 60px;
+}
+}

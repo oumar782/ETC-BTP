@@ -1,0 +1,123 @@
+/* Header styling */
+.header {
+ 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+  height: 95px;
+  transition: background-color 0.3s ease; /* Add transition */
+  background-color: transparent; /* Pas de couleur de fond */
+  box-shadow: 0 4px 6px rgba(245, 242, 242, 0.1); /* Ajout d'une ombre légère pour améliorer la visibilité */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition fluide */
+}
+
+.header.transparent {
+  background-color: white;
+
+ 
+}
+.menu-item.transparent{
+  color: black;
+}
+.logo-text.transparent {
+
+  color: black;
+  
+}
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    max-width: 1200px;
+    margin-top:25px ;
+    color: beige;
+    margin-left: 140px;
+
+
+  }
+  .menusss{
+    margin-top: -4px;
+    margin-left: 40px;
+color: beige;
+    padding: 7px;
+    background-color: blue;
+    border: bisque;
+    border-radius: 20px;
+  box-shadow: 0 1px 1px rgba(230, 237, 228, 0.938); /* Ajout d'une ombre légère pour améliorer la visibilité */
+
+    
+  }
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: beige;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo-icon {
+    height: 32px;
+    width: 32px;
+    color: #3B82F6; /* Blue */
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: beige;
+    
+  }
+  
+  .desktop-menu {
+    display: flex;
+    gap: 32px;
+    
+  }
+  
+  .menu-item {
+    color: beige;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    color: #3B82F6; /* Blue */
+  }
+  
+  .mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none;
+    }
+  
+    .mobile-menu-button {
+      display: block;
+    }
+  
+    .mobile-menu {
+      display: flex;
+    }
+  }
+  
